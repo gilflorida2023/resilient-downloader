@@ -1,22 +1,12 @@
-# Cargo.toml - Rust's manifest file for managing project dependencies
-
 [package]
 name = "resilient-downloader"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-# reqwest is a popular and powerful HTTP client for Rust.
-# It handles redirects, headers, and streaming.
-reqwest = { version = "0.12", features = ["blocking", "json"] }
-
-# clap is used to handle command-line arguments.
-clap = { version = "4.5", features = ["derive"] }
-
-# rayon makes it easy to convert iterators into parallel iterators.
-# This will be used to run downloads in parallel.
-rayon = "1.10"
-
-# num_cpus is a simple crate to get the number of logical CPU cores.
-num_cpus = "1.17"
-
+clap = { version = "4.0", features = ["derive"] }
+reqwest = { version = "0.11", features = ["blocking"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+num_cpus = "1.13"
+rand = "0.8"

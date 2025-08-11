@@ -21,3 +21,6 @@ A high-performance, mutex-free parallel file downloader written in Rust, designe
 ```bash
 git clone https://github.com/yourusername/resilient-downloader.git
 cd resilient-downloader
+cargo build -r
+cd target/release
+./resiliant-downloader -t 8 https://ollama.com/download/ollama-linux-arm64.tgz -o ollama-linux-arm64.tgz

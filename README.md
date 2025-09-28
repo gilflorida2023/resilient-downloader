@@ -19,7 +19,7 @@ A high-performance, mutex-free parallel file downloader written in Rust, designe
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/resilient-downloader.git
+git clone https://github.com/gilflorida2023/resilient-downloader.git
 cd resilient-downloader
 cargo build -r
 cd target/release
